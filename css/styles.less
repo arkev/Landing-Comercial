@@ -1,0 +1,152 @@
+@import 'mixins';
+//Importar
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,400i,700,900');
+//Variables
+@extralight: 200;
+@regular: 400;
+@italic: italic;
+@normal: normal;
+@bold: 700;
+@black: 900;
+@amarillo: #fccf4a;
+@midNightBlue: #00334a;
+@verde: #8ec449;
+//funciones
+.sourceSansPro(@weight: @regular,
+@style: @normal) {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: @weight!important;
+	font-style: @style!important;
+}
+
+//Generales
+html {
+	.sourceSansPro();
+}
+
+//Espacíficos
+.navbar-lg .navbar-brand {
+	padding-top: 15px;
+}
+
+.videoWrapper {
+	margin-bottom: 1.5em;
+}
+
+.theme3 {
+	background-color: rgba(30, 183, 204, .6);
+}
+
+.agile-dynamic-text,
+.agile-dynamic-button,
+.agile-dynamic-image {
+	visibility: hidden;
+}
+
+#columna1 {
+	h1 {
+		.sourceSansPro(@extralight);
+		color: @amarillo;
+		font-size: 60px;
+		margin: 0;
+		line-height: .5em;
+		strong {
+			font-weight: @black;
+			color: white;
+			font-size: 28px;
+		}
+	}
+	.videoWrapper > iframe {
+		position: inherit;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 30vh;
+	}
+	p {
+		.sourceSansPro();
+		line-height: 1.4em;
+		color: white;
+		strong {
+			color: @amarillo;
+		}
+	}
+}
+
+form {
+	overflow: inherit!important;
+	legend {
+		background-color: @midNightBlue!important;
+		position: relative;
+		color: white!important;
+		text-align: left!important;
+		font-size: 16px!important;
+		line-height: 1.2em;
+		.sourceSansPro(@extralight);
+		img {
+			position: absolute;
+			top: -9px;
+			right: -9px;
+			width: 80px;
+		}
+	}
+	.agile-group {
+		margin-left: 25px!important;
+		margin-bottom: 10px!important;
+		select {
+			color: #9E9E9E;
+			font-weight: @regular;
+		}
+		button {
+			background-color: @verde;
+			border: 1px solid @verde;
+			.sourceSansPro();
+			.transition();
+			font-size: 24px;
+			&:hover {
+				background-color: lighten(@verde, 10%);
+				border: 1px solid lighten(@verde, 10%);
+			}
+			&:active {
+				background-color: darken(@verde, 10%);
+				border: 1px solid darken(@verde, 10%);
+			}
+		}
+	}
+}
+
+form.theme3 .agile-field select {
+	padding-left: 10px!important;
+}
+
+#agileform_div {
+	margin-top: 30px;
+}
+
+#portfolio2 .img-responsive {
+	display: block;
+	margin: .5em auto;
+}
+#cta2 {
+	background-color: @verde;
+	border: 1px solid @verde;
+	.sourceSansPro();
+	.transition();
+	font-size: 24px;
+	width: 100%;
+    border-radius: 5px;
+    color: white;
+    margin-top: 2em;
+	&:hover {
+		background-color: lighten(@verde, 10%);
+		border: 1px solid lighten(@verde, 10%);
+	}
+	&:active {
+		background-color: darken(@verde, 10%);
+		border: 1px solid darken(@verde, 10%);
+	}
+}
+
+#gracias{
+	
+}

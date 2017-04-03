@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Gracias por compartirlos tus datos  | DEXAH</title>
+	<!-- Estilos -->
+	<link href="https://s3.amazonaws.com/agilecrm/pagebuilder/live/build/css/skeleton.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+	<!--[if lt IE 9]>
+      <script src="https://s3.amazonaws.com/agilecrm/pagebuilder/static/js/html5shiv.js"></script>
+      <script src="https://s3.amazonaws.com/agilecrm/pagebuilder/static/js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+	<div id="page" class="page">
+		<header class="item header margin-top-0 padding-bottom-0 header11" id="header11" data-selector=".bg.bg1, .bg.bg2, .header10, .header11, .search-box1" style="">
+			<nav role="navigation" class="navbar navbar-default navbar-embossed navbar-lg navbar-static-top" style="margin-bottom: 0px;" data-selector="nav">
+				<div class="container">
+					<div class="navbar-header">
+						<a href="#" class="navbar-brand brand wow bounceInLeft" data-wow-delay=".3s" data-selector="nav a" style=""> <img src="https://agilecrm.s3.amazonaws.com/editor/dexah/dexah_png_1490592645191.png" alt="DEXAH" data-selector="img" style="height: 56px;" />
+						</a>
+					</div>
+				</div>
+				<!-- /.container -->
+			</nav>
+		</header>
+		<div class="item contact" id="agileform5" style="padding-top: 60px; padding-bottom: 60px; background-image: url(&quot;https://agilecrm.s3.amazonaws.com/editor/dexah/bkg_aumentar_jpg_1490596186199.jpg&quot;); background-color: rgba(0, 0, 0, 0); background-size: cover; background-attachment: fixed;" data-selector=".bg.bg1,.item">
+			<div class="container">
+				<div class="col-xs-12" id="columna1">
+					<h1 class="wow bounceInLeft" data-wow-delay=".6s">Gracias por confiar en DEXAH.</h1>
+
+					<p class="wow flipInX" data-wow-delay="1.2s">En breve nos pondrémos en  contácto contigo para ponernos deacuerdo contigo sobre el diagnóstico inicial sin costo.<br><br>
+			
+			Gracias por confiar en DEXAH.<br><br>
+
+
+Conoce las propuestas que tenemos para tu empresa.<br><br>
+</p>
+<button id="cta2">Saber más</button>
+				</div>
+				<!-- /.col-xs-12 -->
+
+			</div>
+			<!-- /.container -->
+		</div>
+
+		
+		
+		<div class="footerWrapper" id="footer2">
+			<div class="item footer bottom-menu" data-selector=".bg.bg1,.item">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-2">
+							<img src="https://agilecrm.s3.amazonaws.com/editor/dexah/dexah_png_1490687172067.png" class="small" style="width: 80px; border-radius: 0px; border-color: rgb(26, 188, 156); border-style: none; border-width: 1px; outline: none; cursor: inherit;" data-selector="img" alt="Dexah" />
+						</div>
+						<div class="col-md-8">
+							<p style="font-size:12px;text-aling:center;">&reg; 2017 Todos los Derechos Reservados - DEXAH / results </p>
+						</div>
+						<div class="col-md-2">
+							<ul class="bottom-menu-iconic-list">
+								<li>
+									<a class="fa fa-linkedin" href="https://www.linkedin.com/company-beta/1690357/?pathWildcard=1690357" data-selector=".footer a" style="color: rgb(31, 183, 204);"></a>
+								</li>
+								<li>
+									<a class="fa fa-facebook" href="https://www.facebook.com/Dexah-358992000823816/" data-selector=".footer a" style="outline: none; outline-offset: -2px; cursor: inherit; color: rgb(31, 183, 204);"></a>
+								</li>
+								<li>
+									<a class="fa fa-twitter" href="https://twitter.com/nowDexah" data-selector=".footer a" style="outline: none; outline-offset: -2px; cursor: inherit; color: rgb(31, 183, 204);"></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /.item -->
+		</div>
+	</div>
+	<!-- /#page -->
+	<!-- Load JS here for greater good =============================-->
+	<script src="https://s3.amazonaws.com/agilecrm/pagebuilder/live/build/js/elements.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.social-share span').on('click', function (e) {
+				//console.log($(e.currentTarget).attr('share-type'));
+
+				var link = window.location.protocol + "//" + window.location.host + window.location.pathname;
+				var encodedLink = encodeURIComponent(link);
+				if ($(e.currentTarget).hasClass('tweet'))
+					window.open('https://twitter.com/intent/tweet?url=' + link + '?usp=send_twt&text=' + document.title, '_blank');
+				else if ($(e.currentTarget).hasClass('facebook'))
+					window.open('https://www.facebook.com/sharer.php?u=' + encodedLink + '?usp=send_fb&t=' + document.title, '_blank');
+				else if ($(e.currentTarget).hasClass('googleplus'))
+					window.open('https://plus.google.com/share?url=' + encodedLink + '?usp=send_gp', '_blank');
+				else if ($(e.currentTarget).hasClass('linkedin'))
+					window.open('https://www.linkedin.com/shareArticle?mini=true&url=' + encodedLink + '&title=' + document.title, '_blank');
+
+			});
+		});
+	</script>
+	<!-- Estadísticas -->
+	<script src="https://dexah.agilecrm.com/stats/min/agile-min.js"></script>
+	<script>
+		_agile.set_account('a4jq82h7l6v7ski39uq0st0ekv', 'dexah');
+		_agile.track_page_view();
+		_agile_execute_web_rules();
+	</script>
+	<!-- Analytics -->
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-72747037-5', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<script src="bower_components/wow/dist/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+</body>
+
+</html>
