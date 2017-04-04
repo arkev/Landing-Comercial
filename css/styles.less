@@ -1,4 +1,5 @@
 @import 'mixins';
+@import 'variab';
 //Importar
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,400i,700,900');
 //Variables
@@ -54,6 +55,12 @@ html {
 			font-weight: @black;
 			color: white;
 			font-size: 28px;
+			@media @tablet {
+				font-size: 52px;
+			}
+		}
+		@media @tablet {
+			font-size: 110px;
 		}
 	}
 	.videoWrapper > iframe {
@@ -62,6 +69,9 @@ html {
 		left: 0;
 		width: 100%;
 		height: 30vh;
+		@media @tablet {
+			height: 37vh;
+		}
 	}
 	p {
 		.sourceSansPro();
@@ -83,6 +93,9 @@ form {
 		font-size: 16px!important;
 		line-height: 1.2em;
 		.sourceSansPro(@extralight);
+		@media @tablet {
+			font-size: 18px!important;
+		}
 		img {
 			position: absolute;
 			top: -9px;
@@ -127,6 +140,7 @@ form.theme3 .agile-field select {
 	display: block;
 	margin: .5em auto;
 }
+
 #cta2 {
 	background-color: @verde;
 	border: 1px solid @verde;
@@ -134,9 +148,9 @@ form.theme3 .agile-field select {
 	.transition();
 	font-size: 24px;
 	width: 100%;
-    border-radius: 5px;
-    color: white;
-    margin-top: 2em;
+	border-radius: 5px;
+	color: white;
+	margin-top: 2em;
 	&:hover {
 		background-color: lighten(@verde, 10%);
 		border: 1px solid lighten(@verde, 10%);
@@ -147,6 +161,4 @@ form.theme3 .agile-field select {
 	}
 }
 
-#gracias{
-	
-}
+#gracias {}
