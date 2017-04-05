@@ -51,16 +51,16 @@ html {
 		font-size: 60px;
 		margin: 0;
 		line-height: .5em;
+		@media @tablet {
+			font-size: 103px;
+		}
 		strong {
 			font-weight: @black;
 			color: white;
 			font-size: 28px;
 			@media @tablet {
-				font-size: 52px;
+				font-size: 48px;
 			}
-		}
-		@media @tablet {
-			font-size: 110px;
 		}
 	}
 	.videoWrapper > iframe {
@@ -95,6 +95,9 @@ form {
 		.sourceSansPro(@extralight);
 		@media @tablet {
 			font-size: 18px!important;
+		}
+		@media @laptop {
+			font-size: 19px!important;
 		}
 		img {
 			position: absolute;
