@@ -12,6 +12,9 @@
 @amarillo: #fccf4a;
 @midNightBlue: #00334a;
 @verde: #8ec449;
+@rojo:#EA2137;
+@azul:#1FB8CB;
+
 //funciones
 .sourceSansPro(@weight: @regular,
 @style: @normal) {
@@ -54,12 +57,18 @@ html {
 		@media @tablet {
 			font-size: 103px;
 		}
+		@media @desktop {
+			font-size: 127px;
+		}
 		strong {
 			font-weight: @black;
 			color: white;
 			font-size: 28px;
 			@media @tablet {
 				font-size: 48px;
+			}
+			@media @desktop {
+				font-size: 60px;
 			}
 		}
 	}
@@ -71,6 +80,12 @@ html {
 		height: 30vh;
 		@media @tablet {
 			height: 37vh;
+		}
+		@media @desktop {
+			height: 43vh;
+		}
+		@media @bigScreen {
+			height: 31vh;
 		}
 	}
 	p {
@@ -164,4 +179,38 @@ form.theme3 .agile-field select {
 	}
 }
 
-#gracias {}
+.gracias {
+	#agileform5{
+		height: 76em;
+	}
+	#columna1 {
+		h1 {
+			font-size: 34px;
+			line-height: 1.1em;
+			margin-bottom: .5em;
+			@media @tablet{
+				font-size: 59px;
+			}
+		}
+		p {
+			font-size: 16px;
+			line-height: 1.1em;
+			@media @tablet{
+				font-size: 32px;
+				line-height: 1.3em;
+			}
+		}
+		h2 {
+			font-size: 18px;
+			line-height: 1.2em;
+			color: @azul;
+			@media @tablet{
+				font-size: 34px;
+			}
+		}
+		#cta2{
+			margin: .5em auto;
+			width: 20rem;
+		}
+	}
+}
