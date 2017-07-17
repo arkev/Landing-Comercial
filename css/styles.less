@@ -53,11 +53,13 @@ html {
         font-size: 60px;
         margin: 0;
         line-height: .5em;
+		text-align: center;
         @media @tablet {
             font-size: 103px;
         }
-        @media @desktop {
+        @media and (min-width: 1200px) {
             font-size: 127px;
+			
         }
         strong {
             font-weight: @black;
@@ -66,11 +68,23 @@ html {
             @media @tablet {
                 font-size: 48px;
             }
-            @media @desktop {
+            @media and (min-width: 1200px) {
                 font-size: 60px;
             }
         }
     }
+	img{
+		max-width: 540px;
+	}
+	h2{
+		.sourceSansPro(@extralight);
+		color: white;
+		text-align: center;
+		strong{
+			font-weight: @bold;
+			color: @amarillo;
+		}
+	}
     .videoWrapper > iframe {
         position: inherit;
         top: 0;
@@ -97,8 +111,13 @@ html {
     }
 }
 
+#agile-form > fieldset > legend{
+	
+}
+
 form {
     overflow: inherit!important;
+	margin: 0 auto;
     legend {
         background-color: @midNightBlue!important;
         position: relative;
@@ -106,6 +125,7 @@ form {
         text-align: left!important;
         font-size: 16px!important;
         line-height: 1.2em;
+		padding-right: 55px!important;
         .sourceSansPro(@extralight);
         @media @tablet {
             font-size: 18px!important;
@@ -151,6 +171,14 @@ form.theme3 .agile-field select {
 
 #agileform_div {
     margin-top: 30px;
+	p{
+		color: white;
+		padding-top: 1em;
+		font-size: 18px;
+		strong{
+			color: @rojo;
+		}
+	}
 }
 
 #portfolio2 .img-responsive {
@@ -176,6 +204,17 @@ form.theme3 .agile-field select {
         background-color: darken(@verde, 10%);
         border: 1px solid darken(@verde, 10%);
     }
+}
+
+#content_section1 {
+	h2{
+		text-align: center;
+	color: @azul;
+	}
+	p{
+		text-align: center;
+		font-size: 18px;
+	}
 }
 
 .gracias {
